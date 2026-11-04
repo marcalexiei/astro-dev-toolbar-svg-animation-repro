@@ -3,6 +3,8 @@
 An SVG shown through `<img>` that animates with CSS stops partway through in Safari under
 `astro dev`. It plays to the end in a build, with the toolbar off, and in Chromium.
 
+![The ring stops partway under astro dev and completes under astro preview](demo.gif)
+
 ## Reproduce
 
 ```sh
