@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fetching an animating SVG in WebKit</title>
+  </head>
+  <body>
+    <p>
+      No Astro on this page: it fetches <code>/ring.svg</code> 250ms after load, as the dev toolbar's
+      audit does. In Safari the ring stops where it was.
+    </p>
+    <img src="/ring.svg" width="200" height="200" alt="A ring that draws itself" />
+    <script>
+      setTimeout(() => fetch('/ring.svg', { cache: 'no-store' }), 250);
+    </script>
+  </body>
+</html>
