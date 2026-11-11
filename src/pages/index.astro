@@ -6,7 +6,14 @@
     <title>SVG animation in an img</title>
   </head>
   <body>
-    <p>The ring should draw itself in one second, then "OK" fades in.</p>
-    <img src="/ring.svg" width="200" height="200" alt="A ring that draws itself" />
+    <p>Each ring should draw itself in one second, then "OK" fades in.</p>
+    <figure>
+      <img src="/ring.svg" width="200" height="200" alt="A ring that draws itself" />
+      <figcaption>Eager</figcaption>
+    </figure>
+    <figure>
+      <img src="/ring.svg?lazy" width="200" height="200" loading="lazy" alt="A ring that draws itself" />
+      <figcaption><code>loading="lazy"</code></figcaption>
+    </figure>
   </body>
 </html>
